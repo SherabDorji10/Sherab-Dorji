@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+
+    
+}
+
+.logo{
+    margin: 2rem 0rem 0rem  16rem;
+    height: auto;
+    width: auto;
+
+}
+
+.logo-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+/* Navigation bar gi doen lu */
+header {
+    padding-top: 200px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    flex-direction: column;  
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(66, 66, 142);
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3 ease;
+}
+
+nav ul li a:hover{
+    background-color: #0a0b0b;
+    padding-top: 16px;
+    transition: 0.2s;
+    border-radius: 5px ;
+    color: white;
+}
+
+
+
+/* Mobile Responsiveness*/
+@media (max-width: 768px){
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.aboutCollege{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.Block{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.Detail{
+    margin-top: 3rem;
+    padding-top: 5%;
+    width: 250px;
+    height: 200px;
+    background-color: rgba(64, 58, 58, 0.5);
+    margin-left: 12rem;
+    border-radius: 10%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    box-shadow:2px 2px 10px 0px rgba(255, 255, 255, 1);
+}
+
+.under-my-name{
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 24.8rem;
+}
+
+.college{
+    text-decoration: none;
+    font-size: 1rem ;
+    color: red;
+}
+
+
+
+.profile{
+    display: flex;
+    justify-content: center; 
+
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.Contact{
+    text-align: center;
+    font-size:x-large;
+    font-weight: bolder;
+    color: rgb(234, 30, 30);
+}
+
+.Social_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.icon:hover{
+    background-color: rgb(90, 167, 205);
+    color: rgb(0, 0, 0);
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 0, 0);
+    font-size: 1.8rem;
+    border-radius: 30%;
+    transition: 0.5s;
+
+}
+
+
+/* This is for aboutMe */
+
+.navigationBar {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(66, 66, 142);
+    padding-top: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.navigationBar ul {
+    padding: 0;
+    background-color: #1f2833;   
+}
+
+.navigationBar ul li {
+    padding: 15px 20px;
+}
+
+.navigationBar ul li a {
+    color: white;
+    display: flexbox;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+@keyframes slideIn{
+    from {
+        transform: translate(-100vw);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+/* This is to style Experience page*/
+
+
+.navigationBar {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(66, 66, 142);
+    padding-top: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.navigationBar ul {
+    padding: 0;
+    background-color: #1f2833;   
+}
+
+.navigationBar ul li {
+    padding: 15px 20px;
+}
+
+.navigationBar ul li a {
+    color: white;
+    display: flex;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navigationBar a:hover {
+    color: #ffffff;
+    padding-top: 15px;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-color: white;
+    background-color: #1f2833;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    align-items: center;
+    border-radius: 10%;
+    margin: 100px 10px 550px 530px ;
+    font-size: small;
+    overflow: hidden;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    /* Hayma screen  ghi chhi kha doe wong */
+    transform: translate(-100vw);
+    animation: slideIn 1s ease-out forwards;
+    
+}
+
+
+@keyframes slideIn{
+    from {
+        transform: translate(-100vw);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.about_me_info{
+    color: white;
+    font-size: medium;
+}
+
+.exp-info-text{
+    color: white;
+    font-size: medium;
+}
+
+.proj-info-text{
+    color: white;
+    font-size: medium;
+}
